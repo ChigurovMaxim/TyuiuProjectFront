@@ -1,0 +1,125 @@
+.grid {
+    display: grid;
+    grid-template-rows: 80px auto 80px;
+    height: 100vh;
+}
+
+@font-face {
+    font-family: "PressStart";
+    src: url("./PressStart2P-Regular.ttf") format('truetype');
+}
+
+
+
+
+
+
+.Titles {
+    width: 90%; /* Увеличиваем ширину для мобильных устройств */
+    height: auto; /* Убираем фиксированную высоту */
+    margin: 0 auto;
+    font-size: 30px; /* Уменьшаем размер шрифта */
+}
+
+.button {
+    padding: 20px; /* Уменьшаем отступы */
+    margin: 5px;
+    width: 100%; /* Задаем кнопкам 100% ширины */
+    height: 60px; /* Уменьшаем высоту кнопок */
+    font-size: 18px; /* Уменьшаем размер шрифта */
+}
+
+.TitleText {
+    font-size: 15px; /* Уменьшаем размер текста заголовка */
+}
+.SubTitleText {
+    font-size: 15px; /* Уменьшаем размер текста заголовка */
+}
+
+header,
+footer {
+    height: 60px; /* Уменьшаем высоту заголовка и подвала */
+}
+
+main {
+    padding: 10px; /* Добавляем отступы для основного контента */
+}
+
+
+
+.button:hover {
+    transform: scale(1.05);
+}
+
+header,
+footer {
+    background: #C08BFD;
+}
+
+aside {
+    background: black;
+}
+
+main {
+    background: #060606;
+}
+
+.outercontainer {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    
+}
+
+.FlexLogo {
+    position: absolute;
+    z-index: 1;
+    margin: 30px;
+    width: auto;
+}
+
+.Titles {
+    display: block;
+    width: 70%;
+    height: 200px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "PressStart", Arial, sans-serif;
+    color: rgb(241, 241, 241);
+    z-index: 2;
+}
+.ButtonsContainer {
+    
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1;
+}
+
+.button {
+    font-family: "PressStart", Arial, sans-serif;
+    color: rgb(241, 241, 241);
+    background: linear-gradient(to right, #038db3, #034388);   
+    padding: 30px;
+    margin: 5px;
+    width: 220px;
+    height: 100px;
+    transition: all 0.3s ease;
+}
+.TitleText {
+    font-size: 50px;
+}
+
+@media (max-width: 800px) { 
+    .TitleText {
+        font-size: 30px;
+    }
+}
